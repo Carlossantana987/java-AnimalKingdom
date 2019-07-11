@@ -20,6 +20,26 @@ public abstract class AbstractsAnimals
 		this.year = year;
 	}
 
+	public String getName()
+	{
+		return name;
+	}
+
+	public int getId()
+	{
+		return id;
+	}
+
+	public int getYear()
+	{
+		return year;
+	}
+
+	public String consume()
+	{
+		return "Consumes";
+	}
+
 
 
 	public abstract String move();
