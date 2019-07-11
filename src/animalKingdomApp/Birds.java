@@ -1,11 +1,10 @@
 package animalKingdomApp;
 
-public class Birds extends AbstractsAnimals
+public class Birds extends AbstractAnimals
 {
 	public Birds(String name, int year)
 	{
-		super(name);
-		super(year);
+		super(name,year);
 	}
 
 	@Override
@@ -21,7 +20,7 @@ public class Birds extends AbstractsAnimals
 	}
 
 	@Override
-	public Sting reproduce()
+	public String reproduce()
 	{
 		return "eggs";
 	}

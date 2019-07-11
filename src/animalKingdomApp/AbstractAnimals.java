@@ -1,6 +1,6 @@
 package animalKingdomApp;
 
-public abstract class AbstractsAnimals
+public abstract class AbstractAnimals
 {
 	
 
@@ -11,7 +11,7 @@ public abstract class AbstractsAnimals
 
 
 
-	public AbstractsAnimals(int id, String name, int year)
+	public AbstractAnimals(String name, int year)
 	{
 		maxId++;
 		id=maxId;
@@ -33,6 +33,16 @@ public abstract class AbstractsAnimals
 	public int getYear()
 	{
 		return year;
+	}
+
+	public void setName(String name)
+	{
+		this.name = name;
+	}
+
+	public void setYear(int year)
+	{
+		this.year = year;
 	}
 
 	public String consume()

@@ -1,12 +1,11 @@
 package animalKingdomApp;
 
-public class Mammal extends AbstractAminals
+public class Mammals extends AbstractAnimals
 {
 	//constructor
-	public Mammals(String name, int year);
+	public Mammals(String name, int year)
 	{
-		super(name);
-		super(year);
+		super(name,year);
 	}
 
 	@Override
@@ -22,7 +21,7 @@ public class Mammal extends AbstractAminals
 	}
 
 	@Override
-	public Sting reproduce()
+	public String reproduce()
 	{
 		return "live births";
 	}
